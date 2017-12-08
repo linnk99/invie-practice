@@ -22,18 +22,31 @@ body {
     margin: 0;
 }
 
+.contenedor {
+    width: 800px;
+    margin: auto;
+}
+
 .button {
-    border-radius: 8px;
+    border-radius: 12px;
     border: none;
     background: #FD324E;
     color: white;
-    padding: 7px;
+    padding: 7px 12px;
+    cursor: pointer;
+    font-size: 18px;
+    background: linear-gradient(to left, #FE334E, #FF7250);
+    text-decoration: none;
 }
 
 .titulo {
     font-size: 70px;
     margin-bottom: 0;
     margin-top: 70px;
+}
+
+.titulo span{
+    text-decoration: underline;
 }
 
 .title-a {
@@ -49,6 +62,7 @@ body {
 
 .guitarras {
     color: #1F313C;
+    margin-bottom: 60px;
 }
 
 .guitarras h2 {
@@ -58,8 +72,10 @@ body {
 
 .portada {
     background-image: url('../images/background.png');
+    background-size: cover;
     color: white;
     padding: 20px;
+    height: 500px;
 }
 
 .portada button {
@@ -72,6 +88,11 @@ body {
     right: 0;
 }
 
+.menu a {
+    text-decoration: none;
+    color:white
+}
+
 .menu li, .menu, .logotipo {
     display: inline-block;
 }
@@ -80,17 +101,25 @@ body {
     margin-left: 30px;
 }
 
+.menu li::before {
+    content: '°';
+    font-size: 12px;
+    color: white;
+}
+
 .header {
     position: relative;
 }
 
-.contenedor {
-    width: 800px;
-    margin: auto;
+.logotipo {
+    display: inline-block;
+    margin-left: 0;
 }
 
+
+
 .guitarra {
-    margin: 10px;
+    margin: 10px 10px 40px 10px;
     padding: 10px;
     /* overflow: hidden; */
     border: 1px solid #1F313C;
@@ -99,6 +128,10 @@ body {
 
 .guitarra ol {
     padding: 0;
+}
+
+.guitarra.b {
+    height: 190px;
 }
 
 .right {
@@ -110,7 +143,6 @@ body {
 .left {
     float: left;
     position: relative;
-    top: 80px;
 }
 
 .contenedor-guitarra-a {
@@ -120,10 +152,13 @@ body {
 .contenedor-guitarra-b {
     margin-left: 370px;
     padding-left: 20px;
+    position: relative;
+    bottom: 90px;
 }
 
 .footer {
     background: #273b47;
+    padding: 50px 10px;
 }
 
 .contacto {
@@ -173,6 +208,10 @@ body {
     flex-direction: column;
 }
 
+.col2 .button {
+    margin-top: 15px;
+}
+
 .intereses label {
     font-size: 12px;
 }
@@ -181,6 +220,15 @@ body {
     margin-bottom: 10px;
 }
 
+input, textarea {
+    outline: 0;
+}
+
+input:focus, textarea:focus {
+    background: lightgray;
+}
+
 .sexo {
     margin-top: 10px;
 }
+
