@@ -1,0 +1,52 @@
+body {
+    font-family: 'Allerta', sans-serif;
+    margin: 0;
+}
+
+.header {
+    width: 100%;
+    display: inline-block;
+    position: relative;
+    background-color: #1F313C;
+}
+
+.contenedor{
+    margin: auto;
+    position: relative;
+}
+
+.logotipo {
+    display: inline-block;
+    margin-left: 30px;
+}
+
+.menu {
+    position: absolute;
+    right: 0;
+    font-size: 18px;
+    color: white;
+}
+
+.menu li, .menu, logotipo {
+    display: inline-block;
+}
+
+.menu li {
+
+}
+
+.menu li::before{
+    content: '∣ ';
+    line-height: 20px;
+}
+
+.button {
+    border: none;
+    border-radius: 12px;
+    background-color: red;
+    margin-left: 50px;
+    padding: 7px 12px;
+    font-size: 16px;
+    background: linear-gradient(to left, #FE334E, #FF7250);
+    text-decoration: none;
+}
